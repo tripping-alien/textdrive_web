@@ -11,10 +11,10 @@ Compress(app) # Enable Gzip compression
 def home():
     return render_template('index.html')
 
-# Add a route for favicon.ico to serve the emoji SVG
+# Add a route for favicon.ico to serve a reliable PNG fallback
 @app.route('/favicon.ico')
 def favicon():
-    return send_from_directory(app.static_folder, 'favicon.svg', mimetype='image/svg+xml')
+    return send_from_directory(app.static_folder, 'icon.png', mimetype='image/png')
 
 # Add a specific route for Digital Asset Links that reads the file directly
 @app.route('/.well-known/assetlinks.json')
