@@ -10,7 +10,7 @@
     <meta name="keywords" content="no texting while driving, safe driving app, auto responder, message reader, TextDrive, hands-free texting, Yandex, Bing">
     <link rel="canonical" href="http://notextingwhiledriving.info" />
     <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
-    <meta name="google-site-verification" content="706qdfPXFXzI_yp0C5jQIii19fSxhf616nNb_4VpdUM" />
+
     <!-- Open Graph / Facebook / Bing -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://notextingwhiledriving.info/">
@@ -32,6 +32,19 @@
             color: #fff;
             background-color: #1a1a1a;
             overflow-x: hidden;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #4CAF50;
+            color: white;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
         }
         #bg-canvas {
             position: fixed;
@@ -114,16 +127,17 @@
     </style>
 </head>
 <body>
-    <canvas id="bg-canvas"></canvas>
-    <div class="content">
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <main id="main-content" class="content" role="main">
         <img src="{{ url_for('static', filename='icon.png') }}" alt="TextDrive App Icon" class="app-icon">
         <h1>End Distracted Driving</h1>
         <h2>TextDrive is your smart driving assistant. It automatically replies to messages and reads them aloud, so you can keep your eyes on the road and your hands on the wheel.</h2>
         
-        <a href="https://play.google.com/store/apps/details?id=com.smalltalkapps.textdrive" class="cta-button">Download for Android</a>
+        <a href="https://play.google.com/store/apps/details?id=com.smalltalkapps.textdrive" class="cta-button" aria-label="Download TextDrive for Android from the Google Play Store">Download for Android</a>
 
-        <div class="features">
-            <h3>Your Personal Text Answering Machine</h3>
+        <section class="features" aria-labelledby="features-heading">
+            <h3 id="features-heading">Your Personal Text Answering Machine</h3>
             <ul>
                 <li>📱 <b>Custom Auto-Replies:</b> Let friends and family know you're driving.</li>
                 <li>🔊 <b>Message Reader:</b> Hear your incoming messages read aloud.</li>
@@ -131,8 +145,8 @@
                 <li>🔵 <b>Automatic Activation:</b> Connect to your car's Bluetooth and TextDrive starts automatically.</li>
                 <li>🚦 <b>Total Focus:</b> A hands-free and eyes-free solution for a safer drive.</li>
             </ul>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
@@ -142,7 +156,7 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
 
         const particlesGeometry = new THREE.BufferGeometry;
-        const particlesCount = 5000;
+        const particlesCount = 2000; // Reduced from 5000 for better performance
         const posArray = new Float32Array(particlesCount * 3);
 
         for (let i = 0; i < particlesCount * 3; i++) {
