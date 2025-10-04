@@ -12,5 +12,10 @@ def home():
 def favicon():
     return send_from_directory(app.static_folder, 'favicon.svg', mimetype='image/svg+xml')
 
+# Add a route for Digital Asset Links
+@app.route('/.well-known/assetlinks.json')
+def asset_links():
+    return send_from_directory(app.static_folder, '.well-known/assetlinks.json')
+
 if __name__ == '__main__':
     app.run(debug=True)
