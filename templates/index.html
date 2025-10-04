@@ -30,14 +30,14 @@
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             color: #fff;
-            background-color: #1a1a1a;
+            background-color: #0D0221; /* Dark blue-purple background */
             overflow-x: hidden;
         }
         .skip-link {
             position: absolute;
             top: -40px;
             left: 0;
-            background: #4CAF50;
+            background: #FF00E5; /* Neon Pink */
             color: white;
             padding: 8px;
             z-index: 100;
@@ -53,7 +53,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            opacity: 0.5;
+            opacity: 0.6;
         }
         .content {
             position: relative;
@@ -65,18 +65,21 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.2);
         }
         .app-icon {
             width: 120px;
             height: 120px;
             border-radius: 22%;
             margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            border: 2px solid #00F5FF;
+            box-shadow: 0 0 15px #00F5FF;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
             margin-bottom: 10px;
+            color: #FF00E5; /* Neon Pink */
+            text-shadow: 0 0 5px #FF00E5, 0 0 10px #FF00E5;
         }
         h2 {
             font-size: 1.2em;
@@ -84,18 +87,23 @@
             max-width: 600px;
             margin-bottom: 30px;
             line-height: 1.6;
+            color: #00F5FF; /* Neon Cyan */
+            text-shadow: 0 0 5px #00F5FF;
         }
         .features {
             max-width: 800px;
             text-align: left;
             margin: 30px 0;
-            background: rgba(0,0,0,0.3);
+            background: rgba(138, 43, 226, 0.1); /* Faint purple */
             padding: 20px;
             border-radius: 8px;
+            border: 1px solid #8A2BE2;
         }
         .features h3 {
             text-align: center;
             margin-bottom: 20px;
+            color: #FF00E5;
+            text-shadow: 0 0 5px #FF00E5;
         }
         .features ul {
             list-style: none;
@@ -103,13 +111,13 @@
         }
         .features li {
             padding: 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(0, 245, 255, 0.3); /* Faint Cyan */
         }
         .features li:last-child {
             border-bottom: none;
         }
         .cta-button {
-            background-color: #4CAF50;
+            background-color: #FF00E5; /* Neon Pink */
             color: white;
             padding: 15px 30px;
             text-align: center;
@@ -118,11 +126,15 @@
             font-size: 1.2em;
             margin-top: 20px;
             border-radius: 50px;
-            transition: background-color 0.3s, transform 0.3s;
+            border: 2px solid #FF00E5;
+            box-shadow: 0 0 10px #FF00E5;
+            transition: all 0.3s;
         }
         .cta-button:hover {
-            background-color: #45a049;
+            background-color: #fff;
+            color: #FF00E5;
             transform: scale(1.05);
+            box-shadow: 0 0 20px #FF00E5;
         }
     </style>
 </head>
@@ -156,7 +168,7 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
 
         const particlesGeometry = new THREE.BufferGeometry;
-        const particlesCount = 2000; // Reduced from 5000 for better performance
+        const particlesCount = 2000;
         const posArray = new Float32Array(particlesCount * 3);
 
         for (let i = 0; i < particlesCount * 3; i++) {
@@ -165,8 +177,10 @@
         particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
 
         const particlesMaterial = new THREE.PointsMaterial({
-            size: 0.005,
-            color: 0xffffff
+            size: 0.008,
+            color: 0x00F5FF, // Neon Cyan particles
+            transparent: true,
+            blending: THREE.AdditiveBlending
         });
         const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
         scene.add(particlesMesh);
