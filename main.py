@@ -4,7 +4,7 @@ import json
 import os
 
 # Serve files from the 'static' directory at the root URL
-app = Flask(__name__, static_url_path='')
+app = Flask(__name__)
 Compress(app) # Enable Gzip compression
 
 @app.route('/')
