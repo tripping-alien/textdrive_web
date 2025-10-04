@@ -3,39 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TextDrive is a mobile app that helps you drive safely by auto-replying to messages and reading them aloud.">
-    <meta name="keywords" content="no texting while driving, safe driving app, auto responder, message reader, TextDrive">
-    <title>TextDrive - No Texting While Driving</title>
+    <meta name="description" content="Drive safely with TextDrive, the smart auto-responder and message reader app. Keep your eyes on the road by letting TextDrive handle your messages.">
+    <meta name="keywords" content="no texting while driving, safe driving app, auto responder, message reader, TextDrive, hands-free texting">
+    <title>TextDrive - The Smart Driving App for No Texting While Driving</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; }
-        .app-icon { width: 150px; height: 150px; float: left; margin-right: 20px; }
-        .cta-button { background-color: #4CAF50; color: white; padding: 15px 25px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin-top: 20px; border-radius: 8px; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #fff;
+            background-color: #1a1a1a;
+            overflow-x: hidden;
+        }
+        #bg-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 22%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.2em;
+            font-weight: 300;
+            max-width: 600px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .features {
+            max-width: 800px;
+            text-align: left;
+            margin: 30px 0;
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .features h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        .features li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .features li:last-child {
+            border-bottom: none;
+        }
+        .cta-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            margin-top: 20px;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
-    <img src="https://play-lh.googleusercontent.com/your-icon-path" alt="TextDrive App Icon" class="app-icon">
-    <h1>TextDrive: Auto-Responder & Message Reader for Safer Driving</h1>
-    <p>Welcome to notextingwhiledriving.info, the official page for the TextDrive app. Our mission is to make the roads safer by preventing distracted driving.</p>
-    
-    <h2>🚗 Stay Focused. Stay Safe. Stay Connected. 🚗</h2>
-    <p>Are you tired of the constant temptation to check your phone while driving? Meet TextDrive, the ultimate auto-responder and message reader app that helps you keep your eyes on the road and your hands on the wheel. Turn your smartphone into a smart Text Answering Machine and enjoy distraction-free driving.</p>
+    <canvas id="bg-canvas"></canvas>
+    <div class="content">
+        <img src="https://play-lh.googleusercontent.com/h_C-Cg8_G_f42s9_S2if_s5IDT1F-4g2p_Ym9CHOj2p0_6NB_mK-1q1tK-2sXlG5XQ=w240-h480-rw" alt="TextDrive App Icon" class="app-icon">
+        <h1>End Distracted Driving</h1>
+        <h2>TextDrive is your smart driving assistant. It automatically replies to messages and reads them aloud, so you can keep your eyes on the road and your hands on the wheel.</h2>
+        
+        <a href="https://play.google.com/store/apps/details?id=com.smalltalkapps.textdrive" class="cta-button">Download for Android</a>
 
-    <h2>🌟 Key Features 🌟</h2>
-    <ul>
-        <li><strong>Personalized Auto-Replies:</strong> Craft customized automatic replies to incoming messages.</li>
-        <li><strong>Message Reader (Text-to-Speech):</strong> Listen to incoming SMS and app messages read aloud.</li>
-        <li><strong>Support for Popular Apps:</strong> Works with SMS, RCS, WhatsApp, Telegram, and Facebook Messenger.</li>
-        <li><strong>Hands-Free, Eyes-Free Operation:</strong> Delegate all messaging tasks to TextDrive.</li>
-        <li><strong>Selective Auto-Reply:</strong> Choose to auto-reply to contacts or non-contacts.</li>
-        <li><strong>Bluetooth Auto-Activation (Premium):</strong> Automatically activate when connected to Bluetooth.</li>
-    </ul>
+        <div class="features">
+            <h3>Your Personal Text Answering Machine</h3>
+            <ul>
+                <li>📱 <b>Custom Auto-Replies:</b> Let friends and family know you're driving.</li>
+                <li>🔊 <b>Message Reader:</b> Hear your incoming messages read aloud.</li>
+                <li>💬 <b>Works with Your Favorite Apps:</b> Supports SMS, WhatsApp, Telegram, and more.</li>
+                <li>🔵 <b>Automatic Activation:</b> Connect to your car's Bluetooth and TextDrive starts automatically.</li>
+                <li>🚦 <b>Total Focus:</b> A hands-free and eyes-free solution for a safer drive.</li>
+            </ul>
+        </div>
+    </div>
 
-    <h2>Download TextDrive Today!</h2>
-    <p>Join us in making our roads safer. Download TextDrive from the Google Play Store and start your journey towards a distraction-free driving experience.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.smalltalkapps.textdrive" class="cta-button">Download on Google Play</a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('bg-canvas') });
+        renderer.setSize(window.innerWidth, window.innerHeight);
 
-    <p style="margin-top: 40px; font-size: 0.8em; color: #777;">
-        By using notextingwhiledriving.info, you are taking a step towards responsible driving. Thank you for your commitment to safety.
-    </p>
+        const particlesGeometry = new THREE.BufferGeometry;
+        const particlesCount = 5000;
+        const posArray = new Float32Array(particlesCount * 3);
+
+        for (let i = 0; i < particlesCount * 3; i++) {
+            posArray[i] = (Math.random() - 0.5) * 5;
+        }
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+        const particlesMaterial = new THREE.PointsMaterial({
+            size: 0.005,
+            color: 0xffffff
+        });
+        const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+        scene.add(particlesMesh);
+        camera.position.z = 2;
+
+        const clock = new THREE.Clock();
+        const animate = () => {
+            const elapsedTime = clock.getElapsedTime();
+            particlesMesh.rotation.y = -0.1 * elapsedTime;
+            particlesMesh.rotation.x = -0.1 * elapsedTime;
+            renderer.render(scene, camera);
+            window.requestAnimationFrame(animate);
+        };
+        animate();
+
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+    </script>
 </body>
 </html>
