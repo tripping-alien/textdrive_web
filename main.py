@@ -4,26 +4,17 @@ import json
 import os
 
 # Serve files from the 'static' directory at the root URL
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 Compress(app) # Enable Gzip compression
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
-# --- Explicit Icon Routes for Maximum Compatibility ---
-@app.route('/favicon.svg')
-def favicon_svg():
-    return send_from_directory(app.static_folder, 'favicon.svg', mimetype='image/svg+xml')
-
-@app.route('/icon.png')
-def icon_png():
-    return send_from_directory(app.static_folder, 'icon.png', mimetype='image/png')
-
+# Fallback route for legacy browsers requesting favicon.ico
 @app.route('/favicon.ico')
 def favicon_ico():
-    return send_from_directory(app.static_folder, 'icon.png', mimetype='image/png')
-# --- End of Icon Routes ---
+    return send_from_directory(app.static_folder, 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 # Dynamically generate the robots.txt file
 @app.route('/robots.txt')
