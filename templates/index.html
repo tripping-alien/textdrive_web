@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Drive safely with TextDrive, the smart auto-responder and message reader app. Keep your eyes on the road by letting TextDrive handle your messages.">
-    <meta name="keywords" content="no texting while driving, safe driving app, auto responder, message reader, TextDrive, hands-free texting">
     <title>TextDrive - The Smart Driving App for No Texting While Driving</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Drive safely with TextDrive, the smart auto-responder and message reader app. Keep your eyes on the road by letting TextDrive handle your messages.">
+    <meta name="keywords" content="no texting while driving, safe driving app, auto responder, message reader, TextDrive, hands-free texting, Yandex, Bing">
+    <link rel="canonical" href="http://notextingwhiledriving.info" />
+    <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+
+    <!-- Open Graph / Facebook / Bing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://notextingwhiledriving.info/">
+    <meta property="og:title" content="TextDrive - The Smart Driving App for No Texting While Driving">
+    <meta property="og:description" content="Drive safely with TextDrive, the smart auto-responder and message reader app. Keep your eyes on the road by letting TextDrive handle your messages.">
+    <meta property="og:image" content="{{ url_for('static', filename='icon.png', _external=True) }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://notextingwhiledriving.info/">
+    <meta property="twitter:title" content="TextDrive - The Smart Driving App for No Texting While Driving">
+    <meta property="twitter:description" content="Drive safely with TextDrive, the smart auto-responder and message reader app. Keep your eyes on the road by letting TextDrive handle your messages.">
+    <meta property="twitter:image" content="{{ url_for('static', filename='icon.png', _external=True) }}">
+
     <style>
         body {
             margin: 0;
@@ -97,7 +116,7 @@
 <body>
     <canvas id="bg-canvas"></canvas>
     <div class="content">
-        <img src="https://play-lh.googleusercontent.com/h_C-Cg8_G_f42s9_S2if_s5IDT1F-4g2p_Ym9CHOj2p0_6NB_mK-1q1tK-2sXlG5XQ=w240-h480-rw" alt="TextDrive App Icon" class="app-icon">
+        <img src="{{ url_for('static', filename='icon.png') }}" alt="TextDrive App Icon" class="app-icon">
         <h1>End Distracted Driving</h1>
         <h2>TextDrive is your smart driving assistant. It automatically replies to messages and reads them aloud, so you can keep your eyes on the road and your hands on the wheel.</h2>
         
