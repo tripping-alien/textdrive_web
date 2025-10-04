@@ -1,7 +1,9 @@
 from flask import Flask, render_template, send_from_directory
+from flask_compress import Compress
 
 # Serve files from the 'static' directory at the root URL
 app = Flask(__name__, static_url_path='')
+Compress(app) # Enable Gzip compression
 
 @app.route('/')
 def home():
