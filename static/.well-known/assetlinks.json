@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.smalltalkapps.textdrive",
+      "sha256_cert_fingerprints": [
+        "92:67:A9:A2:43:A7:D8:12:05:89:DD:96:19:79:26:62:E6:57:49:60:97:0F:E7:FC:29:27:0F:99:0F:52:99:22"
+      ]
+    }
+  }
+]
