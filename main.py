@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory, jsonify
+from flask import Flask, render_template, send_from_directory, jsonify, Response
 from flask_compress import Compress
 import json
 import os
@@ -15,6 +15,21 @@ def home():
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(app.static_folder, 'icon.png', mimetype='image/png')
+
+# Dynamically generate the robots.txt file
+@app.route('/robots.txt')
+def robots_txt():
+    content = (
+        "User-agent: *\n"
+        "Allow: /\n\n"
+        "User-agent: Googlebot\n"
+        "Allow: /\n\n"
+        "User-agent: Yandex\n"
+        "Allow: /\n\n"
+        "User-agent: bingbot\n"
+        "Allow: /\n"
+    )
+    return Response(content, mimetype='text/plain')
 
 # Add a specific route for Digital Asset Links that reads the file directly
 @app.route('/.well-known/assetlinks.json')
