@@ -3,44 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TextDrive - The Smart Driving App for No Texting While Driving</title>
+    <title>TextDrive - Hands-Free Driving App | Stop Texting While Driving</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Drive safely with TextDrive, the smart auto-responder and message reader app. Keep your eyes on the road by letting TextDrive handle your messages.">
-    <meta name="keywords" content="safe driving, autoresponder, auto responder, no texting while driving, safe driving app, message reader, TextDrive, hands-free texting, Yandex, Bing">
-    <link rel="canonical" href="https://notextingwhiledriving.info/" />
-    
-    <!-- Favicon for all browsers (with cache-busting) -->
+    <meta name="description" content="TextDrive helps you drive safely by automatically replying to messages and reading them aloud. Hands-free texting app keeps your focus on the road while supporting SMS, WhatsApp, Telegram, and more. Download TextDrive today!">
+    <meta name="keywords" content="safe driving app, hands-free texting app, SMS auto reply app, message reader for drivers, texting while driving prevention, Android driving app, automatic reply app, TextDrive">
+    <link rel="canonical" href="https://notextingwhiledriving.info/">
+
+    <!-- Favicon -->
     <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
     <link rel="alternate icon" href="/icon.png?v=2" type="image/png">
 
     <!-- Open Graph / Facebook / Bing -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://notextingwhiledriving.info/">
-    <meta property="og:title" content="TextDrive - The Smart Driving App for No Texting While Driving">
-    <meta property="og:description" content="Drive safely with TextDrive, the smart auto-responder and message reader app. Keep your eyes on the road by letting TextDrive handle your messages.">
-    <meta property="og:image" content="{{ url_for('static', filename='icon.png', _external=True) }}">
+    <meta property="og:title" content="TextDrive - Hands-Free Driving App | Stop Texting While Driving">
+    <meta property="og:description" content="TextDrive helps you drive safely by automatically replying to messages and reading them aloud. Hands-free texting app keeps your focus on the road while supporting SMS, WhatsApp, Telegram, and more.">
+    <meta property="og:image" content="https://notextingwhiledriving.info/icon.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://notextingwhiledriving.info/">
-    <meta property="twitter:title" content="TextDrive - The Smart Driving App for No Texting While Driving">
-    <meta property="twitter:description" content="Drive safely with TextDrive, the smart auto-responder and message reader app. Keep your eyes on the road by letting TextDrive handle your messages.">
-    <meta property="twitter:image" content="{{ url_for('static', filename='icon.png', _external=True) }}">
+    <meta property="twitter:title" content="TextDrive - Hands-Free Driving App | Stop Texting While Driving">
+    <meta property="twitter:description" content="TextDrive helps you drive safely by automatically replying to messages and reading them aloud. Hands-free texting app keeps your focus on the road while supporting SMS, WhatsApp, Telegram, and more.">
+    <meta property="twitter:image" content="https://notextingwhiledriving.info/icon.png">
+
+    <!-- Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TextDrive",
+      "operatingSystem": "Android",
+      "applicationCategory": "MobileApplication",
+      "url": "https://notextingwhiledriving.info/",
+      "description": "TextDrive helps you drive safely by automatically replying to messages and reading them aloud. Hands-free texting app for SMS, WhatsApp, Telegram, and more.",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.smalltalkapps.textdrive",
+      "image": "https://notextingwhiledriving.info/icon.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1200"
+      }
+    }
+    </script>
 
     <style>
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             color: #fff;
-            background-color: #0D0221; /* Dark blue-purple background */
+            background-color: #0D0221;
             overflow-x: hidden;
         }
         .skip-link {
             position: absolute;
             top: -40px;
             left: 0;
-            background: #FF00E5; /* Neon Pink */
+            background: #FF00E5;
             color: white;
             padding: 8px;
             z-index: 100;
@@ -75,14 +100,18 @@
             height: 120px;
             border-radius: 22%;
             margin-bottom: 20px;
-            border: 2px solid #5DADE2; /* Empty Sky Blue */
+            border: 2px solid #5DADE2;
             box-shadow: 0 0 15px #5DADE2;
         }
         h1 {
             font-size: 2.8em;
             margin-bottom: 10px;
-            color: #FF00E5; /* Neon Pink */
+            color: #FF00E5;
             text-shadow: 0 0 5px #FF00E5, 0 0 10px #FF00E5;
+        }
+        h2, h3 {
+            color: #5DADE2;
+            text-shadow: 0 0 5px #5DADE2;
         }
         h2 {
             font-size: 1.2em;
@@ -90,8 +119,6 @@
             max-width: 600px;
             margin-bottom: 30px;
             line-height: 1.6;
-            color: #5DADE2; /* Empty Sky Blue */
-            text-shadow: 0 0 5px #5DADE2;
         }
         .social-proof {
             margin-bottom: 30px;
@@ -109,7 +136,7 @@
             width: 90%;
             text-align: left;
             margin: 30px 0;
-            background: rgba(138, 43, 226, 0.1); /* Faint purple */
+            background: rgba(138, 43, 226, 0.1);
             padding: 20px;
             border-radius: 8px;
             border: 1px solid #8A2BE2;
@@ -118,7 +145,6 @@
             text-align: center;
             margin-bottom: 20px;
             color: #FF00E5;
-            text-shadow: 0 0 5px #FF00E5;
         }
         .features ul {
             list-style: none;
@@ -126,13 +152,13 @@
         }
         .features li {
             padding: 10px 0;
-            border-bottom: 1px solid rgba(93, 173, 226, 0.3); /* Faint Sky Blue */
+            border-bottom: 1px solid rgba(93, 173, 226, 0.3);
         }
         .features li:last-child {
             border-bottom: none;
         }
         .cta-button {
-            background-color: #FF00E5; /* Neon Pink */
+            background-color: #FF00E5;
             color: white;
             padding: 15px 30px;
             text-align: center;
@@ -143,6 +169,7 @@
             border: 2px solid #FF00E5;
             box-shadow: 0 0 10px #FF00E5;
             transition: all 0.3s;
+            margin-top: 20px;
         }
         .cta-button:hover {
             background-color: #fff;
@@ -150,56 +177,36 @@
             transform: scale(1.05);
             box-shadow: 0 0 20px #FF00E5;
         }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2em;
-            }
-            h2 {
-                font-size: 1.1em;
-            }
-            .content {
-                padding: 30px 15px;
-            }
-            .features {
-                padding: 15px;
-            }
-            .cta-button {
-                font-size: 1.1em;
-                padding: 12px 25px;
-            }
+            h1 { font-size: 2.2em; }
+            h2 { font-size: 1.1em; }
+            .content { padding: 30px 15px; }
+            .features { padding: 15px; }
+            .cta-button { font-size: 1.1em; padding: 12px 25px; }
         }
-
         @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8em;
-            }
-            h2 {
-                font-size: 1em;
-            }
-            .social-proof {
-                font-size: 1em;
-                padding: 8px 15px;
-            }
-            .app-icon {
-                width: 100px;
-                height: 100px;
-            }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1em; }
+            .social-proof { font-size: 1em; padding: 8px 15px; }
+            .app-icon { width: 100px; height: 100px; }
         }
     </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to Main Content</a>
     <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
     <main id="main-content" class="content" role="main">
-        <img src="/icon.png?v=2" alt="TextDrive App Icon" class="app-icon">
+        <img src="/icon.png?v=2" alt="TextDrive app icon - Hands-Free Safe Driving App" width="120" height="120" class="app-icon">
         <h1>End Distracted Driving</h1>
         <h2>TextDrive is your smart driving assistant. It automatically replies to messages and reads them aloud, so you can keep your eyes on the road and your hands on the wheel.</h2>
-        
+
         <div class="social-proof">🎉 Joined by 100,000+ Safe Drivers! 🎉</div>
 
         <a href="https://play.google.com/store/apps/details?id=com.smalltalkapps.textdrive" target="_blank" rel="noopener noreferrer" class="cta-button" aria-label="Download TextDrive for Android from the Google Play Store">Download for Android</a>
+
+        <h2 id="why-textdrive">Why TextDrive is the Best Safe Driving App</h2>
+        <p>TextDrive automatically replies to your messages while driving, reads texts aloud, and integrates with your favorite apps like SMS, WhatsApp, and Telegram. Keep your eyes on the road, hands on the wheel, and drive safely.</p>
 
         <section class="features" aria-labelledby="features-heading">
             <h3 id="features-heading">Your Personal Text Answering Machine</h3>
@@ -211,6 +218,8 @@
                 <li>🚦 <b>Total Focus:</b> A hands-free and eyes-free solution for a safer drive.</li>
             </ul>
         </section>
+
+        <p>Learn more about <a href="/features" title="TextDrive Features">TextDrive features</a> and how it keeps you safe on the road. Read our <a href="/blog" title="Safe Driving Blog">safe driving tips</a>.</p>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -220,7 +229,7 @@
         const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('bg-canvas') });
         renderer.setSize(window.innerWidth, window.innerHeight);
 
-        const particlesGeometry = new THREE.BufferGeometry;
+        const particlesGeometry = new THREE.BufferGeometry();
         const particlesCount = 2000;
         const posArray = new Float32Array(particlesCount * 3);
 
@@ -231,7 +240,7 @@
 
         const particlesMaterial = new THREE.PointsMaterial({
             size: 0.008,
-            color: 0x5DADE2, // Empty Sky Blue particles
+            color: 0x5DADE2,
             transparent: true,
             blending: THREE.AdditiveBlending
         });
