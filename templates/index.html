@@ -3,263 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TextDrive - Hands-Free Driving App | Stop Texting While Driving</title>
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="TextDrive helps you drive safely by automatically replying to messages and reading them aloud. Hands-free texting app keeps your focus on the road while supporting SMS, WhatsApp, Telegram, and more. Download TextDrive today!">
-    <meta name="keywords" content="safe driving app, text drive, text and drive, stop texting while driving, hands-free texting app, SMS auto reply app, message reader for drivers, texting while driving prevention, Android driving app, automatic reply app, TextDrive">
+    
+    <title>TextDrive: #1 Hands-Free Driving App & SMS Auto Reply for Android</title>
+    <meta name="description" content="Stop distracted driving with TextDrive. The top-rated hands-free app that reads texts aloud and sends automatic replies for SMS, WhatsApp, and Telegram.">
+    <meta name="keywords" content="hands-free texting app, SMS auto reply driving, automatic message reader, stop texting and drive app, safe driving assistant android, WhatsApp auto responder driving">
     <link rel="canonical" href="https://notextingwhiledriving.info/">
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
-    <link rel="alternate icon" href="/icon.png?v=2" type="image/png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-    <!-- Open Graph / Facebook / Bing -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://notextingwhiledriving.info/">
-    <meta property="og:title" content="TextDrive - Hands-Free Driving App | Stop Texting While Driving">
-    <meta property="og:description" content="TextDrive helps you drive safely by automatically replying to messages and reading them aloud. Hands-free texting app keeps your focus on the road while supporting SMS, WhatsApp, Telegram, and more.">
+    <meta property="og:title" content="TextDrive: The Ultimate Hands-Free Driving Assistant">
+    <meta property="og:description" content="Read messages aloud and auto-reply hands-free. Compatible with WhatsApp and Telegram.">
     <meta property="og:image" content="https://notextingwhiledriving.info/icon.png">
+    <meta property="og:url" content="https://notextingwhiledriving.info/">
+    <meta property="og:type" content="website">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://notextingwhiledriving.info/">
-    <meta property="twitter:title" content="TextDrive - Hands-Free Driving App | Stop Texting While Driving">
-    <meta property="twitter:description" content="TextDrive helps you drive safely by automatically replying to messages and reading them aloud. Hands-free texting app keeps your focus on the road while supporting SMS, WhatsApp, Telegram, and more.">
-    <meta property="twitter:image" content="https://notextingwhiledriving.info/icon.png">
-
-    <!-- Structured Data: SoftwareApplication -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "TextDrive",
-      "operatingSystem": "Android",
-      "applicationCategory": "MobileApplication",
-      "url": "https://notextingwhiledriving.info/",
-      "description": "TextDrive helps you drive safely by automatically replying to messages and reading them aloud. Hands-free texting app for SMS, WhatsApp, Telegram, and more.",
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.smalltalkapps.textdrive",
-      "image": "https://notextingwhiledriving.info/icon.png",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "TextDrive",
+        "operatingSystem": "Android",
+        "applicationCategory": "UtilitiesApplication",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "1200"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0.00",
+          "priceCurrency": "USD"
+        }
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "1200"
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I stop texting while driving on Android?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Using an app like TextDrive allows you to stay focused by reading incoming messages aloud and sending custom auto-replies automatically."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does TextDrive work with WhatsApp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, TextDrive supports SMS, WhatsApp, Facebook Messenger, and Telegram for a truly hands-free experience."
+            }
+          }
+        ]
       }
-    }
+    ]
     </script>
 
     <style>
+        :root {
+            --neon-pink: #FF00E5;
+            --neon-blue: #5DADE2;
+            --bg-deep: #0D0221;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-deep);
             color: #fff;
-            background-color: #0D0221;
             overflow-x: hidden;
+            line-height: 1.6;
         }
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #FF00E5;
-            color: white;
-            padding: 8px;
-            z-index: 100;
-            transition: top 0.3s;
-        }
-        .skip-link:focus {
-            top: 0;
-        }
+
         #bg-canvas {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
             z-index: -1;
-            opacity: 0.6;
+            opacity: 0.5;
         }
-        .content {
+
+        .content-wrapper {
             position: relative;
             z-index: 1;
-            text-align: center;
-            padding: 50px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background: rgba(0, 0, 0, 0.2);
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
         }
+
+        /* ANIMATIONS */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
         .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 22%;
-            margin-bottom: 20px;
-            border: 2px solid #5DADE2;
-            box-shadow: 0 0 15px #5DADE2;
+            width: 140px; height: 140px;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 25px rgba(93, 173, 226, 0.5);
+            animation: float 4s ease-in-out infinite;
         }
+
         h1 {
-            font-size: 2.8em;
-            margin-bottom: 10px;
-            color: #FF00E5;
-            text-shadow: 0 0 5px #FF00E5, 0 0 10px #FF00E5;
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            color: var(--neon-pink);
+            text-shadow: 0 0 15px var(--neon-pink);
+            margin-bottom: 15px;
+            font-weight: 900;
         }
-        h2, h3 {
-            color: #5DADE2;
-            text-shadow: 0 0 5px #5DADE2;
-        }
-        h2 {
-            font-size: 1.2em;
+
+        .hero-sub {
+            font-size: clamp(1.1rem, 4vw, 1.4rem);
+            color: var(--neon-blue);
+            max-width: 750px;
+            margin-bottom: 40px;
             font-weight: 300;
-            max-width: 600px;
-            margin-bottom: 30px;
-            line-height: 1.6;
         }
+
         .social-proof {
-            margin-bottom: 30px;
-            font-size: 1.1em;
-            font-weight: bold;
-            color: #fff;
-            text-shadow: 0 0 8px #5DADE2;
-            padding: 10px 20px;
-            border-radius: 50px;
             background: rgba(93, 173, 226, 0.1);
-            border: 1px solid rgba(93, 173, 226, 0.5);
-        }
-        .features {
-            max-width: 800px;
-            width: 90%;
-            text-align: left;
-            margin: 30px 0;
-            background: rgba(138, 43, 226, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #8A2BE2;
-        }
-        .features h3 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #FF00E5;
-        }
-        .features ul {
-            list-style: none;
-            padding: 0;
-        }
-        .features li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(93, 173, 226, 0.3);
-        }
-        .features li:last-child {
-            border-bottom: none;
-        }
-        .cta-button {
-            background-color: #FF00E5;
-            color: white;
-            padding: 15px 30px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1.2em;
+            border: 1px solid rgba(93, 173, 226, 0.3);
+            padding: 10px 25px;
             border-radius: 50px;
-            border: 2px solid #FF00E5;
-            box-shadow: 0 0 10px #FF00E5;
-            transition: all 0.3s;
-            margin-top: 20px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            backdrop-filter: blur(5px);
         }
+
+        .cta-button {
+            background: linear-gradient(90deg, #FF00E5, #b800a5, #FF00E5);
+            background-size: 200% 100%;
+            color: white;
+            padding: 20px 45px;
+            text-decoration: none;
+            font-size: 1.4rem;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 30px rgba(255, 0, 229, 0.4);
+            animation: shimmer 3s infinite linear;
+        }
+
         .cta-button:hover {
-            background-color: #fff;
-            color: #FF00E5;
             transform: scale(1.05);
-            box-shadow: 0 0 20px #FF00E5;
+            box-shadow: 0 0 50px var(--neon-pink);
+            background: #fff;
+            color: var(--neon-pink);
         }
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2em; }
-            h2 { font-size: 1.1em; }
-            .content { padding: 30px 15px; }
-            .features { padding: 15px; }
-            .cta-button { font-size: 1.1em; padding: 12px 25px; }
+
+        /* SEO CONTENT SECTIONS */
+        .copy-section {
+            margin-top: 80px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px;
+            text-align: left;
+            width: 100%;
         }
-        @media (max-width: 480px) {
-            h1 { font-size: 1.8em; }
-            h2 { font-size: 1em; }
-            .social-proof { font-size: 1em; padding: 8px 15px; }
-            .app-icon { width: 100px; height: 100px; }
+
+        .copy-section h2 {
+            color: var(--neon-pink);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .copy-section p {
+            color: #ccc;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .f-card {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid var(--neon-blue);
+        }
+
+        .f-card h4 {
+            color: var(--neon-blue);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .copy-section { padding: 25px; }
         }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to Main Content</a>
-    <canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-    <main id="main-content" class="content" role="main">
-        <img src="/icon.png?v=2" alt="TextDrive app icon - Hands-Free Safe Driving App" width="120" height="120" class="app-icon">
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="content-wrapper">
+        <img src="/icon.png" alt="TextDrive Logo" class="app-icon">
+        
+        <div class="social-proof">🎉 100,000+ Drivers Stay Safe with TextDrive</div>
+
         <h1>End Distracted Driving</h1>
-        <h2>TextDrive is your smart driving assistant. It automatically replies to messages and reads them aloud, so you can keep your eyes on the road and your hands on the wheel.</h2>
+        <p class="hero-sub">The ultimate hands-free driving assistant. Automatically reply to messages and hear them read aloud so you can stay focused on the road.</p>
 
-        <div class="social-proof">🎉 Joined by 100,000+ Safe Drivers! 🎉</div>
+        <a href="https://play.google.com/store/apps/details?id=com.smalltalkapps.textdrive" class="cta-button">Download for Android</a>
 
-        <a href="https://play.google.com/store/apps/details?id=com.smalltalkapps.textdrive" target="_blank" rel="noopener noreferrer" class="cta-button" aria-label="Download TextDrive for Android from the Google Play Store">Download for Android</a>
-
-        <h2 id="why-textdrive">Why TextDrive is the Best Safe Driving App</h2>
-        <p>TextDrive automatically replies to your messages while driving, reads texts aloud, and integrates with your favorite apps like SMS, WhatsApp, and Telegram. Keep your eyes on the road, hands on the wheel, and drive safely.</p>
-
-        <section class="features" aria-labelledby="features-heading">
-            <h3 id="features-heading">Your Personal Text Answering Machine</h3>
-            <ul>
-                <li>📱 <b>Custom Auto-Replies:</b> Let friends and family know you're driving.</li>
-                <li>🔊 <b>Message Reader:</b> Hear your incoming messages read aloud.</li>
-                <li>💬 <b>Works with Your Favorite Apps:</b> Supports SMS, WhatsApp, Telegram, and more.</li>
-                <li>🔵 <b>Automatic Activation:</b> Connect to your car's Bluetooth and TextDrive starts automatically.</li>
-                <li>🚦 <b>Total Focus:</b> A hands-free and eyes-free solution for a safer drive.</li>
-            </ul>
+        <section class="copy-section">
+            <h2>The Science of Safer Driving</h2>
+            <p>TextDrive uses <strong>AI-driven text-to-speech</strong> and <strong>automated response triggers</strong> to keep you connected without the danger. Whether it's a critical work SMS or a family WhatsApp, you stay informed without ever touching your phone.</p>
+            
+            <div class="feature-grid">
+                <div class="f-card">
+                    <h4>Voice Message Reader</h4>
+                    <p>Crystal clear narration of incoming texts, allowing you to keep your eyes 100% on the road.</p>
+                </div>
+                <div class="f-card">
+                    <h4>Smart Auto-Reply</h4>
+                    <p>Fully customizable "I'm driving" templates for SMS, WhatsApp, Telegram, and more.</p>
+                </div>
+                <div class="f-card">
+                    <h4>Bluetooth Automation</h4>
+                    <p>No manual setup needed. TextDrive detects your car's Bluetooth and launches instantly.</p>
+                </div>
+            </div>
         </section>
-    </main>
+
+        <section class="copy-section" style="background: transparent; border: none;">
+            <h2>Common Questions (FAQ)</h2>
+            <div class="f-card" style="margin-bottom: 15px;">
+                <h4>Does TextDrive drain my battery?</h4>
+                <p>No. We've optimized the app for low-energy consumption, especially when running in the background via Bluetooth.</p>
+            </div>
+            <div class="f-card">
+                <h4>Is it compatible with Android Auto?</h4>
+                <p>Yes! TextDrive works alongside Android Auto to provide an even more robust hands-free communication experience.</p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 TextDrive. Drive Safe. Save Lives.
+        </footer>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('bg-canvas') });
+        const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('bg-canvas'), alpha: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
 
         const particlesGeometry = new THREE.BufferGeometry();
-        const particlesCount = 2000;
+        const particlesCount = 2500;
         const posArray = new Float32Array(particlesCount * 3);
 
         for (let i = 0; i < particlesCount * 3; i++) {
-            posArray[i] = (Math.random() - 0.5) * 5;
+            posArray[i] = (Math.random() - 0.5) * 6;
         }
         particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
 
         const particlesMaterial = new THREE.PointsMaterial({
-            size: 0.008,
+            size: 0.007,
             color: 0x5DADE2,
             transparent: true,
+            opacity: 0.8,
             blending: THREE.AdditiveBlending
         });
+
         const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
         scene.add(particlesMesh);
-        camera.position.z = 2;
+        camera.position.z = 2.5;
 
         const clock = new THREE.Clock();
+
         const animate = () => {
             const elapsedTime = clock.getElapsedTime();
-            particlesMesh.rotation.y = -0.1 * elapsedTime;
-            particlesMesh.rotation.x = -0.1 * elapsedTime;
+            particlesMesh.rotation.y = elapsedTime * 0.05;
+            particlesMesh.rotation.x = Math.sin(elapsedTime * 0.2) * 0.1;
+            
             renderer.render(scene, camera);
             window.requestAnimationFrame(animate);
         };
+
         animate();
 
         window.addEventListener('resize', () => {
-            renderer.setSize(window.innerWidth, window.innerHeight);
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
         });
     </script>
 </body>
