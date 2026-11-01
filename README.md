@@ -1,41 +1,43 @@
 # TextDrive - Landing Page
 
-This repository contains the source code for the official landing page for the **TextDrive** Android application. The purpose of this site is to provide information about the app and a direct link to download it from the Google Play Store.
+Official landing page for the **TextDrive** Android application. Built with pure **HTML5, CSS3, and JavaScript** with zero backend or runtime dependencies.
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=google-chrome&logoColor=white)](https://notextingwhiledriving.info/)
 
 ## 🚀 About The Project
 
-This is a simple, responsive, and lightweight landing page built with Flask to promote the TextDrive app.
+This is a modern, responsive, and lightweight landing page created to showcase the TextDrive hands-free driving assistant app.
 
 ### Key Features:
-*   **Flask Backend**: A minimal Python backend to serve the page and assets.
-*   **Responsive Design**: Looks great on both desktop and mobile devices.
-*   **Animated Background**: A subtle particle animation using Three.js.
-*   **SEO Optimized**: Includes meta tags for better search engine visibility.
-*   **Android App Integration**: Configured with Digital Asset Links for a seamless connection to the Android app.
+*   **Pure Static HTML5, CSS3 & JS**: No Python, Flask, Node, or server process needed.
+*   **Universal Compatibility**: Works immediately when opening `index.html` locally or deployed to GitHub Pages, Cloudflare Pages, Render, Vercel, Netlify, or any static web host.
+*   **Animated WebGL Particle Background**: Lightweight particle starfield using Three.js with accessibility support for `prefers-reduced-motion` and visibility pause.
+*   **Responsive Glassmorphism Design**: High-contrast, mobile-first design with smooth transitions and CSS variables.
+*   **SEO & Rich Results Ready**: Complete Open Graph, Twitter Cards, Canonical links, and Schema.org `SoftwareApplication` + `FAQPage` structured data.
+*   **Android App Links**: Includes `.well-known/assetlinks.json` for verified Android App Links.
 
 ## 🏁 Getting Started
 
-To get a local copy up and running, follow these simple steps.
+Because this is a pure HTML5 static site, no build steps or dependencies are required.
 
-### Prerequisites
+### Local Preview
 
-*   Python 3.x
-*   pip
+1. **Directly open in browser:**
+   Double-click `index.html` or open it with any web browser.
 
-### Installation & Running
+2. **Or run with any local static server:**
+   ```sh
+   # Using Python's built-in HTTP server:
+   python -m http.server 8000
 
-1.  Clone the repository:
-    ```sh
-    git clone <your-repo-url>
-    ```
-2.  Navigate into the project directory and install the required Python packages:
-    ```sh
-    pip install -r requirements.txt
-    ```
-3.  Run the Flask development server:
-    ```sh
-    python main.py
-    ```
-4.  Open your browser and navigate to `http://127.0.0.1:5000` to see the site.
+   # Or using Node.js / npx:
+   npx serve .
+   ```
+   Navigate to `http://localhost:8000`.
+
+## 🌐 Deployment
+
+The repository is pre-configured for instant zero-config static hosting:
+* **GitHub Pages**: Settings > Pages > Deploy from branch `main` / root.
+* **Render**: Deploys automatically as a static site via `render.yaml`.
+* **Vercel / Netlify / Cloudflare**: Simply link the repository with publish directory set to root (`.`).

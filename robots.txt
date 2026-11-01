@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://notextingwhiledriving.info/sitemap.xml
