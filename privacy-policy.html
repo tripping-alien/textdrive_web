@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - SmallTalk Apps & Games</title>
+  <meta name="description" content="Official Privacy Policy for SmallTalk Apps and Unity games published on Google Play. Comprehensive disclosures for Unity, Google AdMob, Firebase, COPPA, GDPR, and CCPA.">
+  <meta name="author" content="SmallTalk Apps">
+  <style>
+:root {
+  --bg-primary: #0b0f19;
+  --bg-secondary: #111827;
+  --bg-card: #1f2937;
+  --bg-card-hover: #263346;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+  --accent-cyan: #06b6d4;
+  --accent-cyan-hover: #0891b2;
+  --accent-emerald: #10b981;
+  --accent-emerald-light: #34d399;
+  --accent-purple: #8b5cf6;
+  --border-color: #374151;
+  --border-light: rgba(255, 255, 255, 0.08);
+  --header-bg: rgba(11, 15, 25, 0.85);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  --tag-bg: rgba(6, 182, 212, 0.12);
+  --tag-text: #38bdf8;
+  --badge-green-bg: rgba(16, 185, 129, 0.15);
+  --badge-green-text: #10b981;
+  --code-bg: #1e293b;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --accent-cyan: #0284c7;
+  --accent-cyan-hover: #0369a1;
+  --accent-emerald: #059669;
+  --accent-emerald-light: #10b981;
+  --accent-purple: #7c3aed;
+  --border-color: #e2e8f0;
+  --border-light: rgba(0, 0, 0, 0.06);
+  --header-bg: rgba(248, 250, 252, 0.88);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --tag-bg: rgba(2, 132, 199, 0.08);
+  --tag-text: #0284c7;
+  --badge-green-bg: rgba(5, 150, 105, 0.1);
+  --badge-green-text: #059669;
+  --code-bg: #f1f5f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.85rem 1.5rem;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #06b6d4, #10b981);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.25rem;
+  box-shadow: 0 2px 8px rgba(6, 182, 212, 0.35);
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--text-primary), var(--accent-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.theme-toggle-btn, .print-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+}
+
+.theme-toggle-btn:hover, .print-btn:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border-color: var(--accent-cyan);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  border-bottom: 1px solid var(--border-color);
+  padding: 3rem 1.5rem 2.5rem;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.85rem;
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid rgba(6, 182, 212, 0.25);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-meta-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-light);
+  padding-top: 1.25rem;
+}
+
+.hero-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.hero-meta-item strong {
+  color: var(--text-primary);
+}
+
+/* Quick Filter Bar */
+.filter-bar-wrapper {
+  max-width: 1200px;
+  margin: 1.5rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.filter-bar {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 260px;
+}
+
+.filter-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.game-select {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 100%;
+  max-width: 380px;
+  cursor: pointer;
+  outline: none;
+}
+
+.game-select:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
+}
+
+.search-box {
+  position: relative;
+  min-width: 240px;
+}
+
+.search-input {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem 0.5rem 2.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+/* Layout: Main & Sticky TOC */
+.content-layout {
+  max-width: 1200px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2.5rem;
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Sidebar TOC */
+.sidebar-toc {
+  position: sticky;
+  top: 5.5rem;
+  height: calc(100vh - 6.5rem);
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .sidebar-toc {
+    display: none;
+  }
+}
+
+.toc-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.toc-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.toc-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.toc-link {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  line-height: 1.35;
+  border-left: 2px solid transparent;
+}
+
+.toc-link:hover {
+  color: var(--text-primary);
+  background: var(--bg-card-hover);
+}
+
+.toc-link.active {
+  color: var(--accent-cyan);
+  background: var(--tag-bg);
+  border-left-color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+/* Main Content Article */
+.policy-article {
+  min-width: 0;
+}
+
+.policy-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.policy-section:hover {
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 0.85rem;
+}
+
+.section-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--tag-bg);
+  color: var(--accent-cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.policy-section p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.policy-section p:last-child {
+  margin-bottom: 0;
+}
+
+.policy-section h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 1.5rem 0 0.65rem;
+}
+
+.policy-section ul {
+  list-style: none;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.policy-section li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.policy-section li::before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  color: var(--accent-cyan);
+  font-size: 1.2rem;
+  line-height: 1;
+  top: 0.15rem;
+}
+
+/* Callout Cards */
+.callout-box {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--accent-cyan);
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin: 1.25rem 0;
+}
+
+.callout-box.emerald {
+  border-left-color: var(--accent-emerald);
+}
+
+.callout-box.purple {
+  border-left-color: var(--accent-purple);
+}
+
+.callout-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.callout-box p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+/* Interactive Games Card Grid */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.game-item-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.game-item-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-cyan);
+}
+
+.game-item-card.highlighted {
+  border-color: var(--accent-cyan);
+  background: var(--tag-bg);
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.3);
+}
+
+.game-item-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.game-item-pkg {
+  font-family: monospace;
+  font-size: 0.78rem;
+  color: var(--accent-cyan);
+  word-break: break-all;
+}
+
+.game-item-tag {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: var(--code-bg);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  margin-top: 0.25rem;
+}
+
+/* Data Table */
+.data-table-wrapper {
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.data-table th, .data-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-table th {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.partner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+/* Links */
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: 2.5rem 1.5rem;
+  margin-top: auto;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.footer-text {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+}
+
+/* Print Styles */
+@media print {
+  .site-header, .filter-bar-wrapper, .sidebar-toc, .site-footer, .theme-toggle-btn, .print-btn {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt;
+  }
+
+  .content-layout {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .policy-section {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 1rem 0 !important;
+    page-break-inside: avoid;
+  }
+}
+
+</style>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2306b6d4'/><text x='50%' y='65%' font-size='55' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>S</text></svg>">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand-wrapper">
+        <div class="brand-icon">S</div>
+        <span class="brand-name">SmallTalk Apps</span>
+      </a>
+      <div class="header-actions">
+        <button id="print-policy" class="print-btn" title="Print or save as PDF">
+          <span>🖨️</span>
+          <span>Print</span>
+        </button>
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle theme">
+          <span id="theme-icon">☀️</span>
+          <span id="theme-text">Light</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-badge">Official Legal Document</div>
+      <h1 class="hero-title">Privacy Policy for Games & Applications</h1>
+      <p class="hero-subtitle">
+        Transparent disclosures regarding data handling, Unity Engine runtime, Google AdMob advertising, Google Firebase diagnostics, and user rights across all SmallTalk video games.
+      </p>
+      <div class="hero-meta-bar">
+        <div class="hero-meta-item">
+          <span>📅</span> Last Updated: <strong>November 1, 2026</strong>
+        </div>
+        <div class="hero-meta-item">
+          <span>🏢</span> Developer: <strong>SmallTalk Apps</strong>
+        </div>
+        <div class="hero-meta-item">
+          <span>✉️</span> Contact: <a href="mailto:smalltalkappsandrey@gmail.com">smalltalkappsandrey@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Filter & Search Bar -->
+  <div class="filter-bar-wrapper">
+    <div class="filter-bar">
+      <div class="filter-group">
+        <label for="game-select" class="filter-label">Select Your Game:</label>
+        <select id="game-select" class="game-select">
+          <option value="all">🎮 All SmallTalk Games (Universal Policy)</option>
+          <option value="com.smalltalk.beesmasher">Bee Smasher: Bug Tap Defense</option>
+          <option value="com.smalltalk.car">Car Dodge: Highway Traffic Run</option>
+          <option value="com.smalltalk.dice3d">Dice Roller 3D: RPG Board Dice</option>
+          <option value="com.smalltalk.physicssandbox">Physics Sandbox 2D: Ragdolls</option>
+          <option value="com.smalltalk.pixelescape">Pixel Escape: Endless Runner</option>
+          <option value="com.smalltalk.plane">Tap Plane: Sky Flight Flap</option>
+          <option value="com.smalltalk.ragduels">Ragdoll Duels: 2 Player Battle</option>
+        </select>
+      </div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="policy-search" class="search-input" placeholder="Search privacy terms...">
+      </div>
+    </div>
+  </div>
+
+  <!-- Content Layout: Sidebar TOC + Policy Article -->
+  <div class="content-layout">
+    
+    <!-- Sticky Table of Contents -->
+    <aside class="sidebar-toc">
+      <div class="toc-card">
+        <div class="toc-title">Table of Contents</div>
+        <nav>
+          <ul class="toc-nav">
+            <li><a href="#overview" class="toc-link active">1. Overview & Scope</a></li>
+            <li><a href="#applicable-games" class="toc-link">2. Covered Games</a></li>
+            <li><a href="#data-we-collect" class="toc-link">3. Information Collected</a></li>
+            <li><a href="#unity-engine" class="toc-link">4. Unity Technologies</a></li>
+            <li><a href="#admob" class="toc-link">5. Google AdMob Ads</a></li>
+            <li><a href="#firebase" class="toc-link">6. Google Firebase</a></li>
+            <li><a href="#in-app-purchases" class="toc-link">7. In-App Purchases</a></li>
+            <li><a href="#permissions" class="toc-link">8. Android Permissions</a></li>
+            <li><a href="#children" class="toc-link">9. Children's Privacy (COPPA)</a></li>
+            <li><a href="#gdpr" class="toc-link">10. EEA / UK Rights (GDPR)</a></li>
+            <li><a href="#ccpa" class="toc-link">11. California Rights (CCPA/CPRA)</a></li>
+            <li><a href="#retention-deletion" class="toc-link">12. Data Deletion & Security</a></li>
+            <li><a href="#changes" class="toc-link">13. Policy Updates</a></li>
+            <li><a href="#contact" class="toc-link">14. Contact Developer</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Main Legal Text -->
+    <article class="policy-article">
+
+      <!-- Dynamic Game Selected Alert -->
+      <div id="selected-game-alert" class="callout-box emerald" style="display: none; margin-top: 0; margin-bottom: 2rem;">
+        <div class="callout-title">
+          <span>🎯</span> Viewing Policy For: <span id="selected-game-name"></span>
+        </div>
+        <p>
+          Package Identifier: <code id="selected-game-pkg" style="color: var(--accent-cyan); font-weight: bold;"></code>. All terms in this document govern the usage, SDKs, and local data persistence of this application.
+        </p>
+      </div>
+
+      <!-- 1. Overview -->
+      <section id="overview" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">1</div>
+          <h2 class="section-title">Overview & Core Principles</h2>
+        </div>
+        <p>
+          Welcome to <strong>SmallTalk Apps</strong> ("we", "our", or "us"). We build and publish engaging mobile games and interactive digital experiences powered by the <strong>Unity Engine</strong> for Android and Google Play.
+        </p>
+        <p>
+          We strongly believe in privacy-by-design and data minimization. We do not require account registration, we do not require users to sign in with social media, and we <strong>never sell, lease, or rent your personal information to third parties</strong>.
+        </p>
+        <div class="callout-box">
+          <div class="callout-title">
+            <span>🛡️</span> Zero Personal Account Collection
+          </div>
+          <p>
+            You can install and play our games completely anonymously. We do not store your real name, physical address, email address, or phone number on our game servers.
+          </p>
+        </div>
+      </section>
+
+      <!-- 2. Covered Games -->
+      <section id="applicable-games" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">2</div>
+          <h2 class="section-title">Covered Video Games</h2>
+        </div>
+        <p>
+          This Privacy Policy applies globally to all video games developed and published by SmallTalk Apps, including but not limited to the active titles listed below:
+        </p>
+        
+        <div class="games-grid">
+          <div class="game-item-card" data-pkg="com.smalltalk.beesmasher">
+            <span class="game-item-title">Bee Smasher: Bug Tap Defense</span>
+            <span class="game-item-pkg">com.smalltalk.beesmasher</span>
+            <span class="game-item-tag">Unity • Arcade Action</span>
+          </div>
+
+          <div class="game-item-card" data-pkg="com.smalltalk.car">
+            <span class="game-item-title">Car Dodge: Highway Traffic Run</span>
+            <span class="game-item-pkg">com.smalltalk.car</span>
+            <span class="game-item-tag">Unity • Reflex Racing</span>
+          </div>
+
+          <div class="game-item-card" data-pkg="com.smalltalk.dice3d">
+            <span class="game-item-title">Dice Roller 3D: RPG Board Dice</span>
+            <span class="game-item-pkg">com.smalltalk.dice3d</span>
+            <span class="game-item-tag">Unity • 3D Physics Utility</span>
+          </div>
+
+          <div class="game-item-card" data-pkg="com.smalltalk.physicssandbox">
+            <span class="game-item-title">Physics Sandbox 2D: Ragdolls</span>
+            <span class="game-item-pkg">com.smalltalk.physicssandbox</span>
+            <span class="game-item-tag">Unity • Simulation Sandbox</span>
+          </div>
+
+          <div class="game-item-card" data-pkg="com.smalltalk.pixelescape">
+            <span class="game-item-title">Pixel Escape: Endless Runner</span>
+            <span class="game-item-pkg">com.smalltalk.pixelescape</span>
+            <span class="game-item-tag">Unity • Retro Runner</span>
+          </div>
+
+          <div class="game-item-card" data-pkg="com.smalltalk.plane">
+            <span class="game-item-title">Tap Plane: Sky Flight Flap</span>
+            <span class="game-item-pkg">com.smalltalk.plane</span>
+            <span class="game-item-tag">Unity • Casual Flapper</span>
+          </div>
+
+          <div class="game-item-card" data-pkg="com.smalltalk.ragduels">
+            <span class="game-item-title">Ragdoll Duels: 2 Player Battle</span>
+            <span class="game-item-pkg">com.smalltalk.ragduels</span>
+            <span class="game-item-tag">Unity • 2P Physics Versus</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Information Collected -->
+      <section id="data-we-collect" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">3</div>
+          <h2 class="section-title">Information We Collect & How We Use It</h2>
+        </div>
+        <p>
+          Depending on the specific game and user interaction, information is processed across two distinct tiers:
+        </p>
+
+        <h3>A. Locally Stored Device Data (On-Device Only)</h3>
+        <p>
+          Our games store state information locally on your Android device using Unity's <code>PlayerPrefs</code> and local file sandboxes:
+        </p>
+        <ul>
+          <li><strong>Gameplay Progress:</strong> Highest scores, wave completions, unlocked levels, unlocked skins, and virtual currency tallies.</li>
+          <li><strong>Configuration Preferences:</strong> Sound effects volume, music volume, vibration toggles, and screen orientation preferences.</li>
+          <li><strong>Rating Prompts:</strong> Local counters to prevent repetitive review popups (e.g. SmartRateUs counter).</li>
+        </ul>
+        <p>
+          <strong>Crucial Note:</strong> This data remains isolated within your device's sandbox. It is never transmitted to, backed up on, or inspected by our private web servers.
+        </p>
+
+        <h3>B. Automated Technical & Device Data (Third-Party Partners)</h3>
+        <p>
+          To maintain 60 FPS performance, prevent crashes, and deliver digital ads in free editions, our games may integrate sanctioned industry-standard SDKs (Unity, Google AdMob, Google Firebase). These third parties automatically collect non-personally identifiable technical telemetry as outlined in sections 4, 5, and 6.
+        </p>
+      </section>
+
+      <!-- 4. Unity Technologies -->
+      <section id="unity-engine" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">4</div>
+          <h2 class="section-title">Unity Technologies & Game Engine Runtime</h2>
+        </div>
+        <p>
+          Our games are constructed using the <strong>Unity Engine</strong> (developed by Unity Software Inc. / Unity Technologies). As part of the core runtime engine operation, Unity may automatically collect anonymous hardware and runtime data.
+        </p>
+        <ul>
+          <li><strong>Unique Device Identifiers:</strong> Randomly generated installation GUIDs or platform identifiers (IDFV on iOS, Android ID on Android).</li>
+          <li><strong>Hardware Specifications:</strong> Device model, CPU architecture, GPU chipset, RAM size, screen resolution, and operating system build version.</li>
+          <li><strong>Coarse Location:</strong> IP address used strictly to deduce country/region for localization and regional language delivery (not precise GPS location).</li>
+          <li><strong>Engine Diagnostics:</strong> Rendering frame rates, graphics API compatibility (Vulkan, OpenGLES 3.0), and low-level engine exceptions.</li>
+        </ul>
+        <p>
+          For comprehensive details on how Unity processes runtime data, please review the official 
+          <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity Game Player and App User Privacy Policy</a>.
+        </p>
+      </section>
+
+      <!-- 5. Google AdMob -->
+      <section id="admob" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">5</div>
+          <h2 class="section-title">Google AdMob (Advertising Network)</h2>
+        </div>
+        <p>
+          To keep our games free to download and play for everyone around the world, free editions may display third-party advertisements served by <strong>Google AdMob</strong> (Google LLC).
+        </p>
+
+        <div class="data-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Ad Format</th>
+                <th>When Displayed</th>
+                <th>Data Processed by Google</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Banner Ads</strong></td>
+                <td>Non-intrusively anchored at the screen bottom or top.</td>
+                <td>Google Advertising ID (AAID/GAID), IP address, device model.</td>
+              </tr>
+              <tr>
+                <td><strong>Interstitial Ads</strong></td>
+                <td>Natural breaks between gameplay sessions (e.g. Game Over).</td>
+                <td>Ad impression data, click metrics, time spent viewing.</td>
+              </tr>
+              <tr>
+                <td><strong>Rewarded Videos</strong></td>
+                <td>Voluntarily chosen by user to gain extra lives or dice.</td>
+                <td>Ad completion events, reward authorization token.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Personalized vs. Non-Personalized Ads</h3>
+        <ul>
+          <li><strong>Personalized Ads:</strong> Delivered based on interests inferred from apps you use and websites you visit, using your device's Google Advertising ID. In regions requiring explicit consent (such as the European Economic Area under GDPR and California under CPRA), personalized ads are only served after obtaining user consent via Google's User Messaging Platform (UMP).</li>
+          <li><strong>Non-Personalized Ads:</strong> If consent is declined or if you have opted out of ad tracking, advertisements are contextual—based solely on general game context, coarse location (country), and current device type.</li>
+        </ul>
+
+        <h3>How to Opt Out of Interest-Based Advertising:</h3>
+        <p>
+          You have full control over personalized ads across all your Android apps:
+        </p>
+        <ul>
+          <li><strong>On Your Device:</strong> Open Android <strong>Settings</strong> &gt; <strong>Google</strong> &gt; <strong>Ads</strong> &gt; Tap <strong>Reset advertising ID</strong> or <strong>Delete advertising ID</strong>.</li>
+          <li><strong>Via Google Account:</strong> Visit <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a> to manage personalization preferences.</li>
+          <li>Learn more in the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising & Privacy Guidelines</a>.</li>
+        </ul>
+      </section>
+
+      <!-- 6. Google Firebase -->
+      <section id="firebase" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">6</div>
+          <h2 class="section-title">Google Firebase (Crash Diagnostics & Analytics)</h2>
+        </div>
+        <p>
+          We may employ <strong>Google Firebase</strong> (Google LLC) services to safeguard app performance, stability, and bug resolution:
+        </p>
+        <ul>
+          <li><strong>Firebase Crashlytics:</strong> When an unexpected game crash occurs, Crashlytics records an anonymous crash dump: stack trace, device state (battery percentage, free disk space, orientation), and device model. This data contains zero personal information and is used exclusively by our engineering team to publish bug-fix releases.</li>
+          <li><strong>Firebase Analytics:</strong> Aggregates high-level statistical events (such as "Level 5 Completed" or "Game Started") to evaluate which gameplay mechanics are enjoyable and where balance adjustments are required.</li>
+          <li><strong>Firebase Performance Monitoring:</strong> Tracks launch latency and screen rendering speed to guarantee smooth 60 FPS gameplay across diverse Android chipsets.</li>
+        </ul>
+        <p>
+          Firebase data is stored securely in Google Cloud data centers with strict encryption at rest and in transit. Read the 
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google Firebase Privacy and Security Documentation</a>.
+        </p>
+      </section>
+
+      <!-- 7. In-App Purchases -->
+      <section id="in-app-purchases" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">7</div>
+          <h2 class="section-title">In-App Purchases & Financial Data</h2>
+        </div>
+        <p>
+          Certain SmallTalk titles offer optional In-App Purchases (IAP) (e.g. "Remove Ads" or cosmetic upgrades):
+        </p>
+        <ul>
+          <li><strong>Handled Exclusively by Google Play:</strong> All financial transactions, credit card processing, billing address verification, and currency conversions are handled 100% by the <strong>Google Play In-App Billing API</strong>.</li>
+          <li><strong>No Financial Data Stored:</strong> SmallTalk Apps never receives, views, or stores your credit card numbers, PayPal credentials, or banking details.</li>
+          <li><strong>Fulfillment Verification:</strong> Google Play communicates solely an encrypted receipt token to our app confirming whether a product ID was purchased, which unlocks the corresponding premium feature locally on your device.</li>
+        </ul>
+      </section>
+
+      <!-- 8. Android Permissions -->
+      <section id="permissions" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">8</div>
+          <h2 class="section-title">Android System Permissions Explained</h2>
+        </div>
+        <p>
+          We strictly practice <strong>Permission Minimization</strong>. Our games request only the minimum Android OS permissions required for basic operation:
+        </p>
+        
+        <div class="data-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Category</th>
+                <th>Functional Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>INTERNET</code></td>
+                <td>Normal</td>
+                <td>Required to retrieve advertisement banners, submit anonymous crash reports, and open developer links if tapped.</td>
+              </tr>
+              <tr>
+                <td><code>ACCESS_NETWORK_STATE</code></td>
+                <td>Normal</td>
+                <td>Checks whether WiFi or mobile cellular data is active before initiating network attempts.</td>
+              </tr>
+              <tr>
+                <td><code>VIBRATE</code></td>
+                <td>Normal</td>
+                <td>Provides tactile haptic response on physical collisions, button taps, and game actions (can be muted in-game).</td>
+              </tr>
+              <tr>
+                <td><code>BILLING</code></td>
+                <td>Normal</td>
+                <td>Connects to Google Play In-App Billing for optional premium ad removal purchases.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout-box emerald">
+          <div class="callout-title">
+            <span>🔒</span> No Dangerous Permissions
+          </div>
+          <p>
+            Our games do <strong>NOT</strong> request runtime dangerous permissions: no GPS location access, no microphone access, no camera access, and no address book contacts access.
+          </p>
+        </div>
+      </section>
+
+      <!-- 9. Children's Privacy -->
+      <section id="children" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">9</div>
+          <h2 class="section-title">Children's Privacy (COPPA & Families Compliance)</h2>
+        </div>
+        <p>
+          Protecting young players is paramount to SmallTalk Apps. We comply with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and the <strong>Google Play Families Policy</strong>:
+        </p>
+        <ul>
+          <li><strong>General Audience:</strong> Our games are intended for general audiences aged 13 and older (or 16 in the European Economic Area).</li>
+          <li><strong>No Knowingly Collected Data:</strong> We do not knowingly solicit, collect, or store personal information from children under the age of 13.</li>
+          <li><strong>Appropriate Ad Delivery:</strong> Where applications may appeal to all ages or participate in Family categories, advertising SDKs are configured with child-directed flags (such as <code>tagForChildDirectedTreatment</code> in Google AdMob) to disable interest-based behavioral tracking and restrict ads to vetted family-friendly content.</li>
+          <li><strong>Parental Inquiries:</strong> If a parent or guardian discovers that their child has provided any personal information, please email us immediately at <a href="mailto:smalltalkappsandrey@gmail.com">smalltalkappsandrey@gmail.com</a>. We will take immediate steps to delete any such data.</li>
+        </ul>
+      </section>
+
+      <!-- 10. GDPR -->
+      <section id="gdpr" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">10</div>
+          <h2 class="section-title">European Economic Area & UK Rights (GDPR)</h2>
+        </div>
+        <p>
+          If you reside in the European Economic Area (EEA), United Kingdom (UK), or Switzerland, your personal data is protected under the <strong>General Data Protection Regulation (GDPR)</strong>.
+        </p>
+
+        <h3>Legal Bases for Processing</h3>
+        <ul>
+          <li><strong>User Consent:</strong> We request your explicit consent for personalized advertisements and analytics cookies via an interactive Google-certified consent banner on initial launch. You can modify or withdraw your consent at any time.</li>
+          <li><strong>Legitimate Interests:</strong> Necessary processing for app security, fraud prevention, crash diagnostics, and ensuring smooth 60 FPS gameplay.</li>
+        </ul>
+
+        <h3>Your Statutory GDPR Rights</h3>
+        <ul>
+          <li><strong>Right to Access:</strong> Request confirmation on whether personal data relating to you is being processed.</li>
+          <li><strong>Right to Rectification:</strong> Request correction of inaccurate information.</li>
+          <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Request deletion of your technical data or Advertising ID.</li>
+          <li><strong>Right to Restrict Processing & Object:</strong> Object to processing of your data for advertising purposes.</li>
+          <li><strong>Right to Data Portability:</strong> Receive machine-readable copies of any provided data.</li>
+          <li><strong>Right to Lodge a Complaint:</strong> You have the legal right to file a complaint with your national Data Protection Authority (DPA).</li>
+        </ul>
+      </section>
+
+      <!-- 11. CCPA -->
+      <section id="ccpa" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">11</div>
+          <h2 class="section-title">California Privacy Rights (CCPA / CPRA)</h2>
+        </div>
+        <p>
+          Under the <strong>California Consumer Privacy Act (CCPA)</strong> and the <strong>California Privacy Rights Act (CPRA)</strong>, California residents are entitled to specific disclosures:
+        </p>
+
+        <div class="callout-box purple">
+          <div class="callout-title">
+            <span>🚫</span> We Do Not Sell Your Personal Information
+          </div>
+          <p>
+            SmallTalk Apps has <strong>never sold</strong> and <strong>will never sell</strong> consumer personal information for monetary compensation.
+          </p>
+        </div>
+
+        <p>
+          To the extent that third-party advertising SDKs (such as Google AdMob) utilize identifiers for cross-context behavioral advertising, you can opt out of this "sharing" at any time by resetting or deleting your Google Advertising ID in Android Settings or enabling Global Privacy Control (GPC).
+        </p>
+        <ul>
+          <li><strong>Non-Discrimination:</strong> We will never penalize, degrade gameplay speed, or deny features to any user exercising their CCPA/CPRA rights.</li>
+          <li><strong>Consumer Requests:</strong> To exercise your CCPA rights, contact us at <a href="mailto:smalltalkappsandrey@gmail.com">smalltalkappsandrey@gmail.com</a>.</li>
+        </ul>
+      </section>
+
+      <!-- 12. Retention & Deletion -->
+      <section id="retention-deletion" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">12</div>
+          <h2 class="section-title">Data Retention, Security & Deletion</h2>
+        </div>
+        <h3>Security Safeguards</h3>
+        <p>
+          All network communications initiated by our applications and integrated SDKs employ strong encryption standards (Transport Layer Security / HTTPS).
+        </p>
+
+        <h3>Data Retention</h3>
+        <p>
+          Local game progress persists on your device until uninstalled or manually cleared. Diagnostic telemetry gathered by Google Firebase and AdMob is retained according to Google's standard retention cycles (typically 2 to 14 months before automated aggregation and deletion).
+        </p>
+
+        <h3>How to Completely Delete All Stored Game Data:</h3>
+        <p>
+          You have 100% control over locally stored data. To wipe all progress, scores, and cached preferences:
+        </p>
+        <ul>
+          <li>Open your Android device <strong>Settings</strong>.</li>
+          <li>Navigate to <strong>Apps</strong> (or <strong>Apps &amp; Notifications</strong>).</li>
+          <li>Select the specific SmallTalk Game (e.g. <em>Physics Sandbox 2D</em> or <em>Car Dodge</em>).</li>
+          <li>Tap <strong>Storage &amp; Cache</strong>.</li>
+          <li>Select <strong>Clear Storage</strong> (or <strong>Clear Data</strong>). All local data is instantly purged.</li>
+          <li>Uninstalling the game permanently erases all associated sandbox storage.</li>
+        </ul>
+      </section>
+
+      <!-- 13. Policy Updates -->
+      <section id="changes" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">13</div>
+          <h2 class="section-title">Modifications to This Privacy Policy</h2>
+        </div>
+        <p>
+          We may update this Privacy Policy periodically to reflect new game releases, updated engine features, revised third-party SDK terms, or legal requirements.
+        </p>
+        <p>
+          Any revisions will become effective immediately upon posting to this URL, with an updated "Last Updated" date displayed at the top of this document. We encourage users to review this page periodically.
+        </p>
+      </section>
+
+      <!-- 14. Contact -->
+      <section id="contact" class="policy-section">
+        <div class="section-header">
+          <div class="section-number">14</div>
+          <h2 class="section-title">Developer Contact Information</h2>
+        </div>
+        <p>
+          If you have questions, feedback, or data privacy inquiries regarding our games or this policy, please reach out directly:
+        </p>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <span>📮</span> Contact Details
+          </div>
+          <p>
+            <strong>Developer:</strong> SmallTalk Apps<br>
+            <strong>Primary Contact Email:</strong> <a href="mailto:smalltalkappsandrey@gmail.com">smalltalkappsandrey@gmail.com</a><br>
+            <strong>Support Website:</strong> <a href="https://683759ee4e7bb80008a1d88c--mellifluous-yeot-1fb01b.netlify.app/" target="_blank" rel="noopener">SmallTalk Apps Web Portal</a><br>
+            <strong>Monorepo Repository:</strong> <a href="https://github.com/tripping-alien/smalltalk-apps" target="_blank" rel="noopener">GitHub: tripping-alien/smalltalk-apps</a>
+          </p>
+        </div>
+      </section>
+
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">SmallTalk Apps</div>
+      <p class="footer-text">
+        Crafting modern, optimized, and family-friendly Unity arcade & physics games for players worldwide.
+      </p>
+      <div class="footer-links">
+        <a href="#overview">Back to Top</a>
+        <a href="mailto:smalltalkappsandrey@gmail.com">Email Support</a>
+        <a href="https://683759ee4e7bb80008a1d88c--mellifluous-yeot-1fb01b.netlify.app/" target="_blank" rel="noopener">Developer Website</a>
+        <a href="https://github.com/tripping-alien/smalltalk-apps" target="_blank" rel="noopener">GitHub Monorepo</a>
+      </div>
+      <p class="footer-text" style="margin-top: 1.5rem; font-size: 0.78rem;">
+        &copy; 2026 SmallTalk Apps. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Theme Management (Dark / Light)
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  const themeText = document.getElementById('theme-text');
+
+  function getPreferredTheme() {
+    const saved = localStorage.getItem('st_privacy_theme');
+    if (saved) return saved;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('st_privacy_theme', theme);
+    if (theme === 'light') {
+      if (themeIcon) themeIcon.textContent = '🌙';
+      if (themeText) themeText.textContent = 'Dark';
+    } else {
+      if (themeIcon) themeIcon.textContent = '☀️';
+      if (themeText) themeText.textContent = 'Light';
+    }
+  }
+
+  applyTheme(getPreferredTheme());
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'dark';
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
+
+  // 2. Print Button
+  const printBtn = document.getElementById('print-policy');
+  if (printBtn) {
+    printBtn.addEventListener('click', () => {
+      window.print();
+    });
+  }
+
+  // 3. ScrollSpy for Sticky Table of Contents
+  const sections = document.querySelectorAll('.policy-section');
+  const navLinks = document.querySelectorAll('.toc-link');
+
+  function updateActiveNavLink() {
+    let activeId = '';
+    const scrollPos = window.scrollY + 160;
+
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      if (scrollPos >= top && scrollPos < top + height) {
+        activeId = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${activeId}`) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNavLink, { passive: true });
+  updateActiveNavLink();
+
+  // 4. Interactive Game Selector
+  const gameSelect = document.getElementById('game-select');
+  const gameCards = document.querySelectorAll('.game-item-card');
+  const selectedGameAlert = document.getElementById('selected-game-alert');
+  const selectedGameName = document.getElementById('selected-game-name');
+  const selectedGamePkg = document.getElementById('selected-game-pkg');
+
+  if (gameSelect) {
+    gameSelect.addEventListener('change', (e) => {
+      const val = e.target.value;
+      highlightGame(val);
+    });
+  }
+
+  gameCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const pkg = card.getAttribute('data-pkg');
+      if (gameSelect) {
+        gameSelect.value = pkg;
+      }
+      highlightGame(pkg);
+    });
+  });
+
+  function highlightGame(pkg) {
+    gameCards.forEach(card => {
+      if (!pkg || pkg === 'all') {
+        card.classList.remove('highlighted');
+      } else if (card.getAttribute('data-pkg') === pkg) {
+        card.classList.add('highlighted');
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        card.classList.remove('highlighted');
+      }
+    });
+
+    if (selectedGameAlert) {
+      if (pkg && pkg !== 'all') {
+        const activeCard = document.querySelector(`.game-item-card[data-pkg="${pkg}"]`);
+        const title = activeCard ? activeCard.querySelector('.game-item-title').textContent : pkg;
+        selectedGameName.textContent = title;
+        selectedGamePkg.textContent = pkg;
+        selectedGameAlert.style.display = 'block';
+      } else {
+        selectedGameAlert.style.display = 'none';
+      }
+    }
+  }
+
+  // 5. Search Bar Filter
+  const searchInput = document.getElementById('policy-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      sections.forEach(section => {
+        const text = section.innerText.toLowerCase();
+        if (!query || text.includes(query)) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+  }
+
+  // 6. Click Header to Copy Section Deep Link
+  document.querySelectorAll('.section-title').forEach(title => {
+    title.style.cursor = 'pointer';
+    title.title = 'Click to copy direct link to this section';
+    title.addEventListener('click', () => {
+      const section = title.closest('.policy-section');
+      if (section && section.id) {
+        const url = `${window.location.origin}${window.location.pathname}#${section.id}`;
+        navigator.clipboard.writeText(url).then(() => {
+          showToast(`Link copied: #${section.id}`);
+        }).catch(() => {
+          window.location.hash = section.id;
+        });
+      }
+    });
+  });
+
+  // Simple Toast
+  function showToast(msg) {
+    let toast = document.getElementById('st-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'st-toast';
+      toast.setAttribute('style', 'position:fixed;bottom:24px;right:24px;background:#10b981;color:#ffffff;padding:10px 18px;border-radius:8px;font-weight:600;font-size:0.9rem;box-shadow:0 8px 24px rgba(0,0,0,0.4);z-index:9999;transition:opacity 0.3s ease;');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = msg;
+    toast.style.opacity = '1';
+    setTimeout(() => {
+      toast.style.opacity = '0';
+    }, 2200);
+  }
+});
+
+</script>
+</body>
+</html>
