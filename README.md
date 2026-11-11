@@ -3,6 +3,7 @@
 Official landing page for the **TextDrive** Android application. Built with pure **HTML5, CSS3, and JavaScript** with zero backend or runtime dependencies.
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=google-chrome&logoColor=white)](https://notextingwhiledriving.info/)
+[![Studio](https://img.shields.io/badge/Studio-smalltalkapps.art-FFBE3B.svg)](https://smalltalkapps.art)
 
 ## 🚀 About The Project
 
