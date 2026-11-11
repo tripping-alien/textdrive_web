@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "sellers": [
+    {
+      "seller_id": "pub-6170587092427912",
+      "name": "SmallTalk Apps",
+      "seller_type": "PUBLISHER",
+      "domain": "smalltalkapps.art",
+      "is_passthrough": false
+    }
+  ],
+  "contact_email": "smalltalkappsandrey@gmail.com"
+}
